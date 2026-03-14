@@ -1,0 +1,61 @@
+/* Typical Device Breakpoints 2026
+----------------------------------
+Celulares pequenos: até 480px 
+Smartphones modernos: de 480px até 768px (Essa parte já está feita)
+Tablets e iPads: 768px até 1024px
+Laptops e Desktops: 1024px até 1440px
+Grandes telas (4K/Ultrawide): acima de 1440px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+     body {
+        background-image: linear-gradient(to bottom, var(--roxo-claro), #814291);
+     }
+     section#login {
+        width: 80vw;
+        height: 350px;
+     }
+     section#login > div#imagem {
+        float:left;
+        width: 40%;
+        height: 100%;
+     }
+     section#login > div#formulario {
+        float: right;
+        width: 60%;
+     }
+     div#formulario > h1 {
+        font-size: 1.8em;
+        padding-top: 20px;
+     }
+     div#formulario > p {
+    font-size: 1.1em;
+    margin: 20px 0px;
+     }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--roxo-claro), #814291);
+     }
+    section#login {
+        width: 950px;
+        height: 350px;
+    }
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+    div#formulario > p {
+    font-size: 1.2em;
+    margin: 20px 0px;
+    }
+}

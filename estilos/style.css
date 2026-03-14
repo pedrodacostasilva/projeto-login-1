@@ -1,0 +1,137 @@
+/* PALETA DE CORES
+
+ROXO CLARO: #D18DE0
+ROXO ESCURO: #2A0033
+
+*/
+
+:root {
+    --roxo-claro: #D18DE0;
+    --roxo-escuro: #2A0033;
+}
+* {
+    font-family: Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,html {
+    background-color: var(--roxo-claro);
+    width: 100vw;
+    height: 100vh;
+}
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+
+    background-color: var(--roxo-escuro);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.596);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #2A0033 url(../imagens/mclaren.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    background-position: center center;
+}
+
+section#login > div#formulario {
+    padding: 10px;
+    color: white;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+div#formulario > p {
+    font-size: 0.9em;
+    color: white;
+}
+
+form > div.campo {
+    background-color:rgb(147, 97, 158);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #6a4d81;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+form input {
+    background-color: #93619e;
+    border: none;
+    color: white;
+    transform: translateY(-10px);
+}
+
+form input::placeholder {
+    color: white;
+   padding-left: 10px;
+}
+
+form > div span {
+    padding: 10px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #bc4ae2;
+}
+
+form > a.botao {
+    margin-top: 5px;
+    padding-top: 10px;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+form > a.botao span {
+    font-size: 1em;
+    transform: translateY(4px);
+}
+
+form > a.botao:hover {
+    border-bottom: 1px solid white;
+}
